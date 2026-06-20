@@ -99,3 +99,43 @@ Classes: Positive, Negative, Neutral
 🖼️ Screenshots
 
 Home Dashboard
+<img width="1418" height="762" alt="image" src="https://github.com/user-attachments/assets/8b84a708-0778-4f4e-91af-b16ad6b6d1b2" />
+
+🤝 Contributing
+Contributions are welcome! Please follow these steps:
+
+Fork the repository
+Create a new branch (git checkout -b feature/amazing-feature)
+Commit your changes (git commit -m 'Add amazing feature')
+Push to the branch (git push origin feature/amazing-feature)
+Open a Pull Request
+📝 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🙏 Acknowledgments
+Tweepy - Twitter API library
+Streamlit - Web app framework
+Scikit-learn - Machine learning library
+NLTK - Natural language processing
+📧 Contact
+anshumanpattanayak931@gmail.com
+
+Project Link: https://github.com/YOUR_USERNAME/twitter-sentiment-analysis
+
+🐛 Known Issues
+Twitter API Free tier doesn't support tweet search (requires $100/month Basic plan)
+Solution: Use sample data or Kaggle dataset (both free)
+
+🔮 Future Enhancements
+ Add more ML models (Random Forest, Neural Networks)
+ Real-time streaming analysis
+ Multi-language support
+ Export reports to PDF
+ Docker containerization
+ API endpoint for predictions
+ Advanced visualizations (network graphs
+ 
+⭐ Star This Repo
+If you found this project helpful, please give it a star! ⭐
+
+
