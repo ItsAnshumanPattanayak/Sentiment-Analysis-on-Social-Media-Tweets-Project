@@ -2,7 +2,6 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 A complete Machine Learning pipeline for sentiment analysis on Twitter data using NLP and interactive web interface.
 
@@ -54,88 +53,115 @@ sentiment-analysis-twitter/
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/ItsAnshumanPattanayak/Sentiment-Analysis-on-Social-Media-Tweets-Project.git
-   cd twitter-sentiment-analysis
+   cd Sentiment-Analysis-on-Social-Media-Tweets-Project
+   ```
 
-📊 Usage
+2. **Install dependencies**
 
-Option 1: With Twitter API
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Get Twitter API credentials from Twitter Developer Portal
-Add credentials to .env file
-Run app and use "📊 Collect Tweets" section
+3. **Start the app**
 
-Option 2: With Sample Data (No API needed)
+   ```bash
+   streamlit run app.py
+   ```
 
-Run: python create_sample_data.py
-Start app: streamlit run app.py
-Skip to "🧹 Preprocess" section
+## 📊 Usage
 
-Option 3: With Kaggle Dataset
+### Option 1: With Twitter API
 
-Download Sentiment140 dataset
-Run: python load_kaggle_data.py
-Start the app
+1. Get Twitter API credentials from the Twitter Developer Portal.
+2. Copy `.env.example` to `.env` and add the credentials.
+3. Run the app and use the "📊 Collect Tweets" section.
 
+### Option 2: With Sample Data (No API needed)
 
-🎓 Workflow
+1. Generate sample data:
 
-1. Collect Tweets → 2. Preprocess → 3. Train Model → 4. Visualize → 5. Predict
-Collect Tweets - Gather data from Twitter API or use sample data
-Preprocess - Clean text, remove noise, analyze sentiment
-Train Model - Train ML models (Logistic Regression recommended)
-Visualizations - View charts, word clouds, analytics
-Predict - Test on new tweets or batch process CSV files
-Report - Generate comprehensive analysis reports
+   ```bash
+   python create_sample_data.py
+   ```
 
-📈 Model Performance
+2. Start the app:
 
-Algorithm: Logistic Regression with TF-IDF
-Accuracy: ~85-90% (varies by dataset)
-Features: 5,000 top words with bigrams
-Classes: Positive, Negative, Neutral
+   ```bash
+   streamlit run app.py
+   ```
 
-🖼️ Screenshots
+3. Skip to the "🧹 Preprocess" section.
 
-Home Dashboard
+### Option 3: With Kaggle Dataset
+
+1. Download the Sentiment140 dataset.
+2. Run `python load_kaggle_data.py` if you add that loader script.
+3. Start the app.
+
+## 🎓 Workflow
+
+1. Collect tweets from the Twitter API or sample data.
+2. Preprocess text by cleaning noise and preparing sentiment labels.
+3. Train ML models, with Logistic Regression as the recommended default.
+4. View charts, word clouds, and analytics.
+5. Test new tweets or batch process CSV files.
+6. Generate a comprehensive analysis report.
+
+## 📈 Model Performance
+
+- **Algorithm**: Logistic Regression with TF-IDF
+- **Accuracy**: ~85-90% (varies by dataset)
+- **Features**: 5,000 top words with bigrams
+- **Classes**: Positive, Negative, Neutral
+
+## 🖼️ Screenshots
+
+### Home Dashboard
+
 <img width="1418" height="762" alt="image" src="https://github.com/user-attachments/assets/8b84a708-0778-4f4e-91af-b16ad6b6d1b2" />
 
-🤝 Contributing
+## 🤝 Contributing
+
 Contributions are welcome! Please follow these steps:
 
-Fork the repository
-Create a new branch (git checkout -b feature/amazing-feature)
-Commit your changes (git commit -m 'Add amazing feature')
-Push to the branch (git push origin feature/amazing-feature)
-Open a Pull Request
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/amazing-feature`).
+3. Commit your changes (`git commit -m 'Add amazing feature'`).
+4. Push to the branch (`git push origin feature/amazing-feature`).
+5. Open a pull request.
 
-🙏 Acknowledgments
-Tweepy - Twitter API library
-Streamlit - Web app framework
-Scikit-learn - Machine learning library
-NLTK - Natural language processing
-📧 Contact
+## 🙏 Acknowledgments
+
+- Tweepy - Twitter API library
+- Streamlit - Web app framework
+- Scikit-learn - Machine learning library
+- NLTK - Natural language processing
+
+## 📧 Contact
+
 anshumanpattanayak931@gmail.com
 
 Project Link: https://github.com/ItsAnshumanPattanayak/Sentiment-Analysis-on-Social-Media-Tweets-Project
 
-🐛 Known Issues
-Twitter API Free tier doesn't support tweet search (requires $100/month Basic plan)
-Solution: Use sample data or Kaggle dataset (both free)
+## 🐛 Known Issues
 
-🔮 Future Enhancements
- Add more ML models (Random Forest, Neural Networks)
- Real-time streaming analysis
- Multi-language support
- Export reports to PDF
- Docker containerization
- API endpoint for predictions
- Advanced visualizations (network graphs
+- Twitter API Free tier doesn't support tweet search.
+- Solution: Use sample data or a Kaggle dataset.
+
+## 🔮 Future Enhancements
+
+- Add more ML models (Random Forest, Neural Networks)
+- Real-time streaming analysis
+- Multi-language support
+- Export reports to PDF
+- Docker containerization
+- API endpoint for predictions
+- Advanced visualizations, such as network graphs
  
-⭐ Star This Repo
-If you found this project helpful, please give it a star! ⭐
+## ⭐ Star This Repo
 
+If you found this project helpful, please give it a star! ⭐
 
